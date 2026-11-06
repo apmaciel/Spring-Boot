@@ -4,7 +4,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController //diz que essa classe responde a http e faz json, não uma página da web
 @RequestMapping("/ola-mundo") // determino o prefixo pra acessar todas as rotas dessa classe
-
 public class OlaMundoController {
 
     @GetMapping //Chama esse metodo quando o verbo é GET
@@ -13,9 +12,9 @@ public class OlaMundoController {
     }
 
 
-    @GetMapping("/flora") //Chama esse metodo quando o verbo é GET em /flora
+    @GetMapping("/andie") //Chama esse metodo quando o verbo é GET em /flora
     public String olaFlora(){
-        return "Olá Floraaaaa";
+        return "Andie estudante elas tech";
     }
 
     @GetMapping("/turma") //Chama esse metodo quando o verbo é GET em /turma
